@@ -1,0 +1,19 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Agdasima', cursive;
+  font-weight: 300;
+  padding: 1em 0;
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.5em;
+  p {
+    word-spacing: 0.2em;
+    svg {
+      animation: animateheart 5s linear infinite;
+    }
+  }
+}
