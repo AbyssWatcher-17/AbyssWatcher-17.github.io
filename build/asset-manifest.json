@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c548234b.css",
+    "main.js": "/static/js/main.7f62d48f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Redwing-Medium.otf": "/static/media/Redwing-Medium.7402d4c764b8807db59b.otf",
+    "static/media/Redwing-Light.otf": "/static/media/Redwing-Light.bda278368d19c572f2f2.otf",
+    "index.html": "/index.html",
+    "static/media/angle-down.svg": "/static/media/angle-down.11e201872eb97a54f0d3.svg",
+    "main.c548234b.css.map": "/static/css/main.c548234b.css.map",
+    "main.7f62d48f.js.map": "/static/js/main.7f62d48f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c548234b.css",
+    "static/js/main.7f62d48f.js"
+  ]
+}
