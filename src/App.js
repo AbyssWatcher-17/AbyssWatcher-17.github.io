@@ -19,7 +19,7 @@ import Contact from './components/Contact/Contact';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/AbyssWatcher-17.github.io">
         <Routes>
           <Route
             exact
