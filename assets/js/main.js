@@ -70,6 +70,9 @@ const showMenu = (toggleId, navId) => {
   
   /*SCROLL ABOUT*/
   sr.reveal(".about-img", {});
+sr.reveal(".about-imgleft", {});
+sr.reveal(".about-imgright", {});
+
   sr.reveal(".about-subtitle", { delay: 400 });
   sr.reveal(".about-text", { delay: 400 });
   

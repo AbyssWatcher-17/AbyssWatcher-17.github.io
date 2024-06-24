@@ -76,7 +76,7 @@ body {
 
 #jobTitle_current{
   display: inline-block;
-  width: 270px; /* Adjust as needed */
+  width: 270px; 
 font-size: var(--h6-font-size);
 }
 
@@ -343,6 +343,23 @@ section.about {
   transform: scale(1.2);
   transition: 1s ease;
 }
+.about.section {
+    text-align: center;
+}
+
+.about-subtitle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.about-subtitle-img img {
+    max-width: 100%; 
+    height: auto; 
+    margin-left:30px;
+}
 
 
 /* ===== EDUCATION =====*/
@@ -584,25 +601,31 @@ img.man-icons {
   margin-bottom: var(--mb-4);
 }
 .footer-social {
-  margin-bottom: var(--mb-4);
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
 }
+
 .footer-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: inherit;
-  padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; 
+    color: inherit; 
 }
+
+    .footer-icon i {
+        font-size: 24px; 
+        margin-bottom: 5px; 
+    }
+
 
 .footer-icon br {
   display: none;
 }
 
-.footer-icon i {
-  margin-bottom: 5px;
-}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
@@ -697,9 +720,20 @@ img.man-icons {
   .contact-form {
     width: 360px;
   }
-  .contact-container {
-    justify-items: center;
-  }
+    #image2 {
+        height: 126px;
+        width: 200px; 
+        max-width: none;
+        margin-left: 10px; 
+    }
+    .home-img {
+        display: flex;
+        align-items: center; 
+    }
+    
+    .contact-container {
+        justify-items: center;
+    }
 }
 
 @media screen and (min-width: 1024px) {
