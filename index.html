@@ -15,6 +15,7 @@ To do:
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- =====BOX ICONS===== -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
@@ -71,24 +72,31 @@ To do:
     <!--===== HOME =====-->
       <section class="home bd-grid section" id="home">
 
-          <div class="home-data">
-              <h2 class="home-title">
-                  Hello,<br />My Name is <br /> <span class="home-title-color">Mehmet Yavuz Gökmen</span><br />
+          <div class="home-content">
+              <div class="home-title">
+                <h3>
+                  Hello,<br />
+                  My Name is <br /> 
+                  <span class="home-title-color">Mehmet Yavuz Gökmen</span><br />
                   <span id="jobTitle">Software Developer </span>
+                </h3>
+              </div>
+              <div class="home-img">
+                    <img src="assets/img/subfolder/myself2.png" class="home-imgClass" alt="me" id="image1"/>
+                    <img src="assets/img/subfolder/myself2.png" class="home-imgClass" alt="me" id="image1" />
+
+
+              </div>
                   <br>
-                  <div class="home-img">
-                      <img src="assets/img/subfolder/myself2.png" class="home-imgClass" alt="me" id="image1" style="margin-left:-40px;"/>
-                      <img src="assets/img/subfolder/myself2.png" class="home-imgClass" alt="me" id="image2" />
-                  </div>
 
 
 
-                  <span id="jobTitle_current">Currently Working As--> </span>
-                  <span id="jobTitle_currentJob">Embedded Software Developer</span>
-              </h2>
+                  <!-- <span id="jobTitle_current">Currently Working As </span>
+                  <span id="jobTitle_currentJob">Software Developer</span> -->
 
-              <a href="https://drive.google.com/file/d/13PFbv1XYahwOPA-n0Oric2q5n5gozVlI/view?usp=sharing" target="_blank"
+              <a href="" target="_blank" 
                  class="button">Resume</a>
+                 <!-- buraya PDF olarak CV mi yükleyecem -->
           </div>
 
           <div class="home-social">
@@ -131,17 +139,22 @@ To do:
         <div style="text-align: center">
           <h3 class="about-subtitle">Current Position:
           </h3>
-          <h2>R&D Embedded Software Engineer</h2>
+          <h2>R&D Software Engineer</h2>
           <br>
           <p class="about-text">
-            Specializing in the development and implementation of cutting-edge technologies. With over more than a year of hands-on experience in this field.
+            Specializing in advanced software development with a focus on system integration and protocol implementation. With over two years of hands-on experience, I have honed my expertise in C++ and C# programming, mastering Software Design Patterns and cross-language integration techniques.
             <br>
-            I have honed my skills in working with various Microcontrollers such as STM32, Raspberry Pi, and Arduino.
+            <br>
+            I have honed my skills in working with various Microcontrollers such as STM32, Raspberry Pi, and Arduino.While also cultivating strong capabilities in Linux environments and automation scripting.
+            <br>
             <br>
             In addition to my expertise in Embedded Systems, 
-            I have also explored the fascinating realms of Desktop App Development,Data Science, Machine Learning, and Deep Learning. 
+            My professional journey has been marked by successful development of mission-critical software solutions, particularly in implementing the GMP3 protocol for integrator firms. This work showcased my ability to create sophisticated systems, including custom DLL implementations in C# and comprehensive GUI-based testing simulators. I've demonstrated proficiency in bridging complex technologies, seamlessly connecting C++ and C# through DLL integration while maintaining robust system architecture.
+            
             <br>
             <br>
+            Currently based in Germany with B2.1 language proficiency, I bring a unique blend of technical expertise and cross-cultural communication skills to collaborate effectively in diverse team environments.
+            also explored the fascinating realms of Desktop App Development,Data Science, Machine Learning, and Deep Learning.
             I have successfully completed several projects in these domains, utilizing my analytical and problem-solving abilities to deliver innovative solutions. 
             <br>
             <br>
@@ -185,7 +198,7 @@ To do:
         <!-- <img src="assets/img/subfolder/Pyk9000.jpg"  alt=""> -->
         <p class="about-text">
 
-            <h4>R&D Embedded Software Engineer</h4>
+            <h4>R&D Software Engineer</h4>
         <p>Responsible for :</p>
         <br>
         <li data-aos='fade-right' data-aos-delay='200'>
@@ -201,6 +214,9 @@ To do:
         <li data-aos='fade-right' data-aos-delay='800'>
             <span>Linux Bash Scripting</span>
         </li>
+        <li data-aos='fade-right' data-aos-delay='1000'>
+          <span>Develop Integration Software Simulators with C# (GMP3 Protocol)</span>
+      </li>
 
         </p>
 
@@ -213,44 +229,81 @@ To do:
     <!---========Education ======--->
     <section class="education section" id="education">
       <h2 class="section-title">Graduation & Education</h2>
-      <div class="education-container bd-grid">
-    
-        <div class="education-data">
-          <div class="education-names">
-            <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-            <span class="education-name">Maltepe University</span> 
-            <p class="education-platform ">Bachelor Degree in Computer Engineering</p>
-            <p class="education-duration ">19/08/2019 - 31/07/2022</p>
-            <div class="education-img"> <img src="" alt=""> foto</div>    
+      <br><br><br><br>
 
+      <div class="education-container bd-grid">
+        <div class="education-card">
+          <div class="education-data">
+            <div class="education-names">
+              <span class="education-name">Maltepe University</span>
+              <p class="education-platform ">Bachelor Degree in Computer Engineering</p>
+              <p class="education-duration ">19/08/2019 - 31/07/2022</p>
+              <button class="education-details-toggle">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="education-details">
+                <p>🥉 Completed 3.Degree in Computer Engineering</p>
+                <div class="education-photos"> 
+                  <img class="education-photo" src="assets/img/subfolder/mezuniyetFoto.jpeg" alt="Graduation Photo">                  
+                  <img class="education-photo" src="assets/img/subfolder/MaltepeFoto2.jpg" alt="Graduation Photo">                  
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-      <div class="education-container bd-grid">
-    
-    <div class="education-data">
-      <div class="education-names">
-        <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-        <span class="education-name">TH Köln (FachhochSchule Köln</span>
-        <p class="education-platform ">Erasmus+ , Informatics(German)</p>
-        <p class="education-duration ">01/03/2021 - 31/08/2021</p>
-        <div class="education-img"> <img src="" alt=""> foto2</div>
-
       </div>
-    </div>
-        </div>
+    
+      <br><br><br><br>
+
       <div class="education-container bd-grid">
-      <div class="education-data">
-        <div class="education-names">
-          <!-- <i class="bx bxl-html5 skills-icon"></i> -->
-          <span class="education-name">Data Science Bootcamp</span>
-          <p class="education-platform ">Erasmus+ , Informatics(German)</p>
-          <p class="education-duration ">01/03/2021 - 31/08/2021</p>
-          <div class="education-img"> <img src="" alt=""> foto3</div>
+        <div class="education-card">
+          <div class="education-data">
+            <div class="education-names">
+              <span class="education-name">TH Köln (FachhochSchule Köln)</span>
+              <p class="education-platform ">Erasmus+ , Informatics(German)</p>
+              <p class="education-duration ">01/03/2021 - 31/08/2021</p>
+              <button class="education-details-toggle">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="education-details">
+                <p>Lived in Germany as an Informatics Erasmus+ Student in TH Köln</p>
+                <div class="education-photos"> 
+                  <img class="education-photo" src="assets/img/subfolder/Erasmus-ThKöln.jpeg" alt="Graduation Photo">                  
+                  <img class="education-photo" src="assets/img/subfolder/Erasmus2.jpeg" alt="Graduation Photo">                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <br><br><br><br>
+
+        <div class="education-container bd-grid">
+          <div class="education-card">
+            <div class="education-data">
+              <div class="education-names">
+                <span class="education-name">Data Science Bootcamp</span>
+                <p class="education-duration ">April 2022 - Jul 2022</p>
+                <button class="education-details-toggle">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="education-details">
+                  <p>Data Science Bootcamp.We have completed with our Project and its Presentation</p>
+                  <div class="education-photos"> 
+                    <img class="education-photo" src="assets/img/subfolder/Bootcamp.jpeg" alt="Graduation Photo">  
+                    <img class="education-photo" src="assets/img/subfolder/Kodluyoruz.jpg" alt="Graduation Photo">                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   
-        </div>
-        </div>
-        </div>
+
+
     
 
 
@@ -273,19 +326,11 @@ To do:
         <div>
            <h2 class="skills-subtitle">Programming Languages</h2>
           <div class="skills-data">
-            <div class="skills-names">
-
-              <!-- bu sembol nie çalışmadı -->
-              
+            <div class="skills-names">              
               <i class="bx bxl-python" ></i> 
               <span class="skills-name">Python
-    
-                
-
               </span>
-      
             </div>
-
           </div>
 
           <span>
@@ -329,12 +374,8 @@ To do:
 
           <div class="skills-data">
             <div class="skills-names">
-
-               <!-- bu sembol nie çalışmadı -->
-
-
-              <i class="i-bx-bxl-c-plus-plus"></i>
-              <span class="skills-name">C/C++</span>
+               <i class="devicon-cplusplus-plain"></i>
+               <span class="skills-name">C/C++</span>
             </div> 
           </div>           
               
@@ -345,19 +386,12 @@ To do:
           <br>
           C++ 11 
           <br> 
+          C++ 20 
+          <br> 
           Boost
           </span>
-
-        
-          
           <br>
-
-
         </div>
-        
-
-
-        
       </div>
       
 
@@ -373,10 +407,7 @@ To do:
                   <h2 class="skills-subtitle">Deployment Platform</h2>
                   <div class="skills-data">
                     <div class="skills-names">
-          
-                      <!-- streamlit logosu -->
-          
-                      <img class="skills-icon" src="./assets/img/express.png" alt="" /> 
+                      <i class="bx bxs-star skills-icon"></i> 
                       <span class="skills-name">Streamlit</span>
                     </div>
                   </div>
@@ -412,14 +443,12 @@ To do:
                   <h2 class="skills-subtitle">DataBase</h2>
                   <div class="skills-data">
                    <div class="skills-names">
-                     <i class="bx bxl-sql skills-icon"></i>
-                     <!-- MS SqlServer sembolü -->
-                     <span class="skills-name">MS SqlServer</span>
+                    <i class="fab fa-microsoft skills-icon"></i> <span class="skills-name">MS SqlServer</span>
                     </div>
                    </div>
                    <div class="skills-data">
                     <div class="skills-names">
-                      <i class="bx bxl-github skills-icon"></i>
+                      <i class="fas fa-database"></i>
                       <span class="skills-name">SqLite3</span>
                     </div>
                    </div>
@@ -433,14 +462,12 @@ To do:
                  <h2 class="skills-subtitle">Additional</h2>
                   <div class="skills-data">
                    <div class="skills-names">
-                    <i class="bx bxl-sql skills-icon"></i>
-                    <!-- Raspberry Pi sembolü -->
+                    <i class='bx bxs-chip skills-icon'></i>
                     <span class="skills-name">Raspberry Pi</span>
                    </div>
        
                   <div class="skills-names">
-                   <!-- Stm32 sembolü -->
-                   <i class="bx bxl-sqlite3 skills-icon"></i>
+                    <i class='bx bxs-chip skills-icon'></i>
                    <span class="skills-name">Stm32</span>
                   </div>
                    
@@ -620,7 +647,7 @@ To do:
       <p class="footer-title" style="font-size:16px;">
           The Dreamers of the day are dangerous men for they may act their dream with open eyes to make it possible.       <br />
       </p>
-      <p class="footer-title" style="font-size:18px;">"Uncharted 3"</p>
+      <!-- <p class="footer-title" style="font-size:18px;">"Uncharted 3"</p> -->
       <div class="footer-social">
           <a href="https://www.linkedin.com/in/myavuzgokmen/" target="_blank" class="footer-icon">
               <i class="fa fa-linkedin"></i><br />LinkedIn

@@ -61,6 +61,17 @@ const showMenu = (toggleId, navId) => {
     duration: 2000,
     reset: true,
   });
+
+  
+
+/*===== education-card =====*/
+const educationCards = document.querySelectorAll('.education-card');
+
+educationCards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('show');
+  });
+});
   
   /*SCROLL HOME*/
   sr.reveal(".home-title", {});

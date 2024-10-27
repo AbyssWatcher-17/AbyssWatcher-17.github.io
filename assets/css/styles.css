@@ -254,12 +254,12 @@ img {
 .footer-icon:hover {
   color: var(--first-color);
 }
-.home-img {
+/* .home-img {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 95%;
-}
+} */
 
 /*BUTTONS*/
 .button {
@@ -406,14 +406,6 @@ section.about {
       }
 
       
-      /* bu -img ler nie çalışmadı anlamadım */
-
-      /* .education-img{
-        font-size: 12px;
-        display: flex;
-        cursor: pointer;
-        justify-self: flex-end;
-      } */
 
   
   .education-data:hover {
@@ -423,8 +415,46 @@ section.about {
     transition: 1s ease;
   }
 
-  /* .education-data:click {
+  .education-card {
+    cursor: pointer; /* Make the entire card clickable */
+    transition: height 0.3s ease; /* Add transition for smooth height change */
+  }
+  
+  .education-details {
+    overflow: hidden;
+    max-height: 0; /* Use max-height instead of height */
+    transition: max-height 0.3s ease;
+    display: none; /* Initially hide the content */
+  }
+  
+  .education-card.show .education-details {
+    max-height: 60%; /* Set a reasonable maximum height */
+    display: flex; /* Make content visible when expanded */
+  }
 
+  .education-photos {
+    display: flex; /* Use flexbox for better layout control */
+  }
+  
+  .education-photo {
+    max-width: 45%; /* Limit the maximum width */
+    max-height: 200px; /* Set a maximum height */
+    width: auto; /* Ensure width scales automatically */
+    height: auto; /* Ensure height scales automatically */
+    margin: 1%;
+    object-fit: cover; /* Maintain aspect ratio, center-crop if needed */
+  }
+/*   
+  /* Animations for info and images (same as before) */
+  .education-details .education-info-images > * {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .education-details.show .education-info-images > * {
+    opacity: 1;
+    transform: translateY(0);
   } */
 
 
@@ -685,11 +715,12 @@ img.man-icons {
     bottom: 15%;
     left: 80%;
   }
-  .home-imgClass{
-    width: 500px;
-    height: auto;
-
+  .home-imgClass {
+    width: 300px; 
+    height: auto; 
+    margin-left: 10px; /* Adjust as needed */
   }
+
   .about-container {
     align-items: center;
     margin: auto;
