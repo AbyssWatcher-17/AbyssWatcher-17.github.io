@@ -425,6 +425,14 @@ section.about {
     max-height: 0; /* Use max-height instead of height */
     transition: max-height 0.3s ease;
     display: none; /* Initially hide the content */
+    
+  }
+.education-details p{
+  font-weight: normal;
+}
+  .education-details h5 + p{
+    font-weight: normal;
+    font-size: 12px;
   }
   
   .education-card.show .education-details {
@@ -444,7 +452,7 @@ section.about {
     margin: 1%;
     object-fit: cover; /* Maintain aspect ratio, center-crop if needed */
   }
-/*   
+
   /* Animations for info and images (same as before) */
   .education-details .education-info-images > * {
     opacity: 0;
@@ -455,7 +463,7 @@ section.about {
   .education-details.show .education-info-images > * {
     opacity: 1;
     transform: translateY(0);
-  } */
+  } 
 
 
 
@@ -552,52 +560,76 @@ img.man-icons {
   border-radius: 0.5rem;
 }
 
-/* ===== Projects =====*/
+/* ===== Projects ===== */
 .project-container {
+  display: grid;
   gap: 2rem;
   max-width: 1024px;
-  min-height: 1024px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* column-gap: 2rem; */
-  width: calc(100% - 2rem);
+  width: 100%;
   margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
 }
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 1rem;
+  min-height: 400px; /* Adjust as needed */
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
 .project-img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
+
 .project-img img {
-  transition: 1s;
+  width: 100%;
+  transition: 0.5s;
   cursor: pointer;
-  margin-bottom: 0.5rem;
 }
+
 .project-img img:hover {
   transform: scale(1.1);
 }
-.project-container p {
-  margin: auto 1rem 1rem;
-}
+
 .project-title {
-  margin-bottom: var(--mb-2);
-  margin-top: var(--mb-3);
   font-size: var(--h2-font-size);
+  margin: 1rem 0 0.5rem;
 }
+
+
 .project-subtitle {
-  margin-bottom: var(--mb-4);
-  padding-bottom: 3.5rem;
+  flex-grow: 1; /* Takes up available vertical space */
+  margin-bottom: 2.5rem; /* Extra margin to prevent overlap */
 }
+
+.project-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* Ensures buttons stay at the bottom */
+  padding-bottom: 1rem; /* Extra space for clarity */
+  align-items: center;
+}
+
 .small-btn {
   padding: 0.3rem 1.3rem;
   font-weight: 400;
-  margin: 1rem;
-}
-.project-btns {
-  position: absolute;
-  bottom: 0;
+  background-color: #f0f0f0; /* Example button background */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* ===== CONTACT =====*/
 .contact-input {
   width: 100%;
