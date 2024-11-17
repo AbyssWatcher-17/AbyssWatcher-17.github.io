@@ -334,6 +334,17 @@ img {
   background-color: var(--first-color-alt);
 }
 
+/* Add download icon */
+.button::after {
+  content: "\f019";
+  /* FontAwesome download icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+
 /* ===== ABOUT =====*/
 section.about {
   padding: 20vh 15px;
@@ -809,6 +820,12 @@ img.man-icons {
   font-family: "Font Awesome 5 Free";
   content: "\f0e0";
   /* Email icon */
+}
+
+.footer-icon[href^="https://wa.me"]:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f232";
+  /* WhatsApp icon */
 }
 
 [data-theme="dark"] .footer-icon {
