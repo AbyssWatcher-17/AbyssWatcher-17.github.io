@@ -336,14 +336,43 @@ img {
 
 /* Add download icon */
 .button::after {
-  content: "\f019";
-  /* FontAwesome download icon */
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-left: 8px;
   font-size: 0.9em;
 }
 
+
+/*BUTTON_Resume*/
+.buttonResume {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  border-radius: .5rem;
+  margin-top: 3rem;
+  /* Space above social icons */
+  margin-bottom: 2rem;
+  /* Space below the button */
+  transition: .3s;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttonResume:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  background-color: var(--first-color-alt);
+}
+
+/* Add download icon */
+.buttonResume::after {
+  content: "\f019"; /* FontAwesome download icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 8px;
+  font-size: 0.9em;
+}
 
 /* ===== ABOUT =====*/
 section.about {
