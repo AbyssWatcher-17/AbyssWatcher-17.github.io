@@ -765,11 +765,11 @@ img.man-icons {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .project-container {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 /* ===== CONTACT =====*/
 .contact-input {

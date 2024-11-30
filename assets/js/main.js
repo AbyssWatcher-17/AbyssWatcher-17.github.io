@@ -75,7 +75,7 @@ educationCards.forEach(card => {
 
 /*SCROLL HOME*/
 sr.reveal(".home-title", {});
-sr.reveal(".button", { delay: 200 });
+//sr.reveal(".button", { delay: 200 });
 sr.reveal(".home-img", { delay: 400 });
 sr.reveal(".home-social-icon", { interval: 200 });
 
@@ -87,14 +87,14 @@ sr.reveal(".about-imgright", {});
 sr.reveal(".about-subtitle", { delay: 400 });
 sr.reveal(".about-text", { delay: 400 });
 
-/*SCROLL SKILLS*/
-sr.reveal(".skills-subtitle", {});
-sr.reveal(".skills-text", {});
-sr.reveal(".skills-data", { interval: 100 });
+// /*SCROLL SKILLS*/
+// sr.reveal(".skills-subtitle", {});
+// sr.reveal(".skills-text", {});
+// sr.reveal(".skills-data", { interval: 100 });
 // sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
-sr.reveal(".project-img", { interval: 200 });
+// sr.reveal(".project-img", { interval: 200 });
 
 /*SCROLL CONTACT*/
 // sr.reveal(".contact-input", { interval: 200 });
