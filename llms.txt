@@ -1,0 +1,57 @@
+﻿# Mehmet Yavuz Gökmen - Backend R&D Software Engineer
+
+> Backend R&D Software Engineer with 4 years of professional experience specializing in C#, C/C++, Python, secure payment protocols (GMP3), and modern Agentic AI / RAG solutions.
+
+## Summary
+
+- **Name**: Mehmet Yavuz Gökmen
+- **Role**: Backend R&D Software Engineer
+- **Experience**: 4+ years professional software development
+- **Location**: Istanbul, Turkey
+- **Education**: 
+  - Maltepe University — B.S. in Computer Engineering (Graduated 3rd in class, GPA: 3.22 / 4.00)
+  - TH Köln (Technische Hochschule Köln, Germany) — Erasmus+ Studies in Informatics
+- **Languages**: Turkish (Native), English (C1 Fluent), German (B2 Proficient)
+- **Portfolio**: https://abysswatcher-17.github.io/
+- **GitHub**: https://github.com/AbyssWatcher-17
+- **LinkedIn**: https://www.linkedin.com/in/myavuzgokmen/
+
+## Core Competencies
+
+### Programming Languages & Frameworks
+- **C# & .NET**: .NET Core, ASP.NET Core (Four-tier clean architecture: Application, Domain, Data, Web), Entity Framework Core, LINQ
+- **C / C++**: C++98, C++11, C++20, Boost, cross-language interop (C++ DLLs integrated into C# services via P/Invoke)
+- **Python**: Flask, Tkinter, NumPy, Pandas, Scikit-Learn, Streamlit
+- **Databases**: Microsoft SQL Server, SQLite3, relational schema design, query optimization
+
+### System Integration & Hardware Protocols
+- **GMP3 Protocol**: Certified fiscal protocol implementation supporting 130+ third-party integrator companies. Handled binary framing, LRC/CRC validation, command-response state machines, and hardware-level stability.
+- **Hardware Targets**: Next-Generation Pump Cash Registers (PYK-9000), Android Smart POS (P1000 ECR), fuel dispensers.
+- **TSM (Trusted Secure Manager)**: Secure key management, terminal provisioning, remote firmware deployments, and tamper-resistant transaction logging.
+- **Linux & Automation**: Bash shell scripting, POSIX automation, automated device diagnostics.
+
+### Artificial Intelligence, Agents & RAG
+- **Frameworks**: LangGraph, LangChain, FAISS Vector Search, Hugging Face
+- **Patterns**: ReAct Agent workflows, RAG with citation provenance, zero-hallucination verification, LLM-as-a-Judge evaluations, conversational memory
+- **Model Context Protocol (MCP)**: Agent-to-tool and server-client integration workflows
+- **Embedded AI & Hardware**: Raspberry Pi, STM32 microcontroller integration
+
+## Professional Experience
+
+### Propay (Profilo Payment Systems) — R&D Software Engineer (Backend & Integration)
+- Engineered core firmware and protocol integration for Next-Gen Pump Cash Registers (PYK-9000) and Android POS (P1000).
+- Integrated C++ DLLs into C# backend services, boosting binary stream processing speed by ~5%.
+- Built a layered ASP.NET Core internal operations platform serving 40+ R&D colleagues with 20+ dynamic pages.
+- Directed technical integrator support for 130+ enterprise retail and automation partners across Turkey.
+
+## Featured Projects
+
+1. **LLM RAG & Defense Spec AI Agent** (https://github.com/AbyssWatcher-17/llm-rag-memory-ai-agents)
+   - Specialized AI engineering assistant for defense & aerospace military standards (MIL-STD).
+   - Features ReAct agent workflows, conversational memory, FAISS dense retrieval, and LLM-as-a-Judge evaluation.
+2. **Carculator** (https://github.com/AbyssWatcher-17/Carculator)
+   - Graduation engineering project: dynamic vehicle maintenance, fuel optimization, and expenditure calculator.
+3. **SocketServer** (https://github.com/AbyssWatcher-17/SocketServer)
+   - High-throughput asynchronous TCP socket server in C for Linux environments.
+4. **Kodluyoruz Data Science Machine Learning Project** (https://github.com/AbyssWatcher-17/Kodluyoruz_Data_Science-Bootcamp)
+   - Real estate valuation engine using XGBoost and Streamlit.

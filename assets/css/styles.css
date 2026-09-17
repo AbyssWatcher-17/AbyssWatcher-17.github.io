@@ -466,6 +466,94 @@ section.about {
   margin-left: 30px;
 }
 
+/* ===== EXPERIENCE GALLERY & SECTIONS ===== */
+.experience-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 1024px;
+}
+
+.experience-img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(14, 36, 49, 0.08);
+  border: 1px solid #e2e8f0;
+  flex: 1 1 210px;
+  max-width: 240px;
+  min-height: 190px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-img-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(14, 36, 49, 0.12);
+}
+
+.experience-img-card img {
+  max-height: 130px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.experience-img-card span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: var(--second-color);
+  text-align: center;
+}
+
+.experience-section-content {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.experience-subblock {
+  margin-bottom: 2rem;
+}
+
+.experience-subblock h4 {
+  font-size: 1.1rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.dark-mode .experience-img-card {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.dark-mode .experience-img-card span {
+  color: var(--third-color);
+}
+
 
 /* ===== EDUCATION =====*/
 
@@ -524,8 +612,30 @@ section.about {
 .education-card {
   cursor: pointer;
   /* Make the entire card clickable */
+  -webkit-tap-highlight-color: transparent;
   transition: height 0.3s ease;
   /* Add transition for smooth height change */
+}
+
+.education-details-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--first-color);
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-details-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.education-card.show .education-details-toggle i {
+  transform: rotate(180deg);
 }
 
 .education-details {
@@ -548,8 +658,8 @@ section.about {
 }
 
 .education-card.show .education-details {
-  max-height: 60%;
-  /* Set a reasonable maximum height */
+  max-height: 2500px;
+  /* Ensure ample room for images and content */
   display: flex;
   /* Make content visible when expanded */
 }
@@ -571,6 +681,29 @@ section.about {
   margin: 1%;
   object-fit: cover;
   /* Maintain aspect ratio, center-crop if needed */
+}
+
+.education-photo-placeholder {
+  min-width: 150px;
+  height: 140px;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 1%;
+}
+
+.dark-mode .education-photo-placeholder {
+  background: #222;
+  border-color: #444;
+  color: #aaa;
 }
 
 /* Animations for info and images (same as before) */
@@ -866,6 +999,150 @@ img.man-icons {
   transform: translateY(-3px);
 }
 
+/* ===== TRAVELS & ATHLETIC PURSUITS (LIFESTYLE) SECTION ===== */
+#lifestyle .education-data {
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#lifestyle .education-data:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(14, 36, 49, 0.18);
+}
+
+#lifestyle .education-card.show .education-data:hover {
+  transform: none;
+}
+
+#lifestyle .education-details {
+  display: none;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(14, 36, 49, 0.08);
+}
+
+#lifestyle .education-card.show .education-details {
+  display: flex;
+  max-height: none;
+}
+
+#lifestyle .education-details h5 {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--second-color);
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+#lifestyle .education-details h5 p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-top: 0.6rem;
+}
+
+/* Lifestyle photo gallery & responsive collage */
+.lifestyle-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.lifestyle-photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.65rem;
+  box-shadow: 0 4px 15px rgba(14, 36, 49, 0.12);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  height: 165px;
+  flex: 1 1 150px;
+  max-width: 220px;
+  min-width: 130px;
+  background-color: #0f172a;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.lifestyle-photo-item:hover {
+  -webkit-transform: translateY(-4px) scale(1.03);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(64, 112, 244, 0.28);
+  z-index: 2;
+}
+
+.lifestyle-photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+.lifestyle-photo-item:hover img {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.lifestyle-photo-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(14, 36, 49, 0.92) 0%, rgba(14, 36, 49, 0.6) 80%, transparent 100%);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.5rem 0.4rem 0.3rem;
+  text-align: center;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+/* Dark mode for lifestyle section */
+.dark-mode #lifestyle .education-data {
+  background: #151515;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid #282828;
+}
+
+.dark-mode #lifestyle .education-details {
+  border-top-color: #282828;
+}
+
+.dark-mode #lifestyle .education-details h5 {
+  color: #f1f5f9;
+}
+
+.dark-mode #lifestyle .education-details h5 p {
+  color: #94a3b8;
+}
+
+.dark-mode .lifestyle-photo-item {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333333;
+}
+
+.dark-mode .lifestyle-photo-badge {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.65) 80%, transparent 100%);
+  color: #f8fafc;
+}
+
 
 
 /* ===== MEDIA QUERIES=====*/
@@ -1024,6 +1301,15 @@ img.man-icons {
 
   .about-container {
     flex-direction: column;
+  }
+
+  .education-details {
+    flex-direction: column;
+  }
+
+  .lifestyle-photo-item {
+    height: 140px;
+    flex: 1 1 120px;
   }
 }
 
