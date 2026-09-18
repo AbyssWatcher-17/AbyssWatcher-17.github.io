@@ -45,14 +45,57 @@ const navMenu = document.getElementById("nav-menu");
 navLinks.forEach((n) => n.addEventListener("click", () => { navMenu.classList.remove("show") }));
 
 /*===== COPY Email =====*/
-const copy = document.getElementById("copy");
-copy.addEventListener("click", () => {
-  navigator.clipboard.writeText("yavuzgokmene@hotmail.com");
-  copy.innerHTML = "copied";
-  setTimeout(() => {
-    copy.innerHTML = null;
-  }, 1000);
-});
+const copyBtn = document.getElementById("copy");
+if (copyBtn) {
+  copyBtn.addEventListener("click", () => {
+    const email = "yavuzgokmene@hotmail.com";
+    const copyText = document.getElementById("copy-text");
+    const copyIcon = document.getElementById("copy-icon");
+
+    const onSuccess = () => {
+      if (copyText) copyText.innerText = "Copied!";
+      if (copyIcon) {
+        copyIcon.className = "bx bx-check";
+      }
+      copyBtn.classList.add("copied");
+
+      setTimeout(() => {
+        if (copyText) copyText.innerText = "Copy";
+        if (copyIcon) {
+          copyIcon.className = "bx bx-copy";
+        }
+        copyBtn.classList.remove("copied");
+      }, 2000);
+    };
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(email).then(onSuccess).catch(() => {
+        fallbackCopyText(email, onSuccess);
+      });
+    } else {
+      fallbackCopyText(email, onSuccess);
+    }
+  });
+}
+
+function fallbackCopyText(text, callback) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.opacity = "0";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  try {
+    document.execCommand("copy");
+    if (callback) callback();
+  } catch (err) {
+    console.error("Fallback copy failed", err);
+  }
+  document.body.removeChild(textArea);
+}
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
